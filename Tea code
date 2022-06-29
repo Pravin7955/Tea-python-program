@@ -1,0 +1,26 @@
+import time
+
+vessel = []
+person = int(input("For how many person do you want to make tea? : "))
+water = int(input("Enter amount of \"water\" {in ML} for one person : "))
+vessel.append(water*person)
+
+print("\nBoiling water........")
+time.sleep(2)
+
+tea = int(input("\nEnter amount of \"tea\" {in Tea spoon} for one person : "))
+sugar = int(input("Enter amount of \"sugar\" {in Tea spoon} for one person : "))
+milk = int(input("Enter amount of \"milk\" {in ML} for one person : "))
+vessel.append(tea*person)
+vessel.append(sugar*person)
+vessel.append(milk*person)
+
+print("\nBoiling mixture.......")
+time.sleep(2)
+
+print(f"\n{vessel[0]} ML water is used.")
+print(f"{vessel[1]} Tea_Spoon tea leaves is used.")
+print(f"{vessel[2]} Tea_Spoon sugar is used.")
+print(f"{vessel[3]} ML milk is used.")
+print(f"\nTotal quantity of your tea is {vessel[0]+vessel[3]} ML.")
+print("\nYour tea is ready.")
